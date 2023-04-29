@@ -4,9 +4,10 @@ import {
   Stack,
   Text,
   useColorModeValue,
+  Link,
 } from "@chakra-ui/react";
 
-export default function Footer() {
+export default function Footer({color}) {
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -18,7 +19,8 @@ export default function Footer() {
         py={4}
         align="center"
       >
-        <Text>© 2023 Eldora Boo. All rights reserved</Text>
+        <Text>© 2023 Азамат Молдашев. Разработчик веб-приложений</Text>
+        <Text>Сайт собран c помощью проекта <Link href="https://github.com/eldoraboo/portable-portfolio" isExternal color={color}>eldoraboo</Link></Text>
       </Container>
     </Box>
   );

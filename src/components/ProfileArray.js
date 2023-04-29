@@ -11,7 +11,6 @@ const parseProfile = (mdContent) => {
     linkedin: "",
     github: "",
     email: "",
-    logo: "",
   };
 
   const lines = mdContent.split("\n");
@@ -41,9 +40,6 @@ const parseProfile = (mdContent) => {
             }
           }
           break;
-        case "Logo":
-          profile.logo = lines[++i].substr(2).trim();
-          break;
         default:
           // do nothing
           break;
@@ -65,7 +61,6 @@ const ProfileArray = () => {
     linkedin: "",
     github: "",
     email: "",
-    logo: "",
   });
 
   useEffect(() => {

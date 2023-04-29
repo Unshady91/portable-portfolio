@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Nav from './components/NavBar';
 import Header from './components/Hero';
 import About from './components/About';
@@ -23,7 +22,7 @@ function App() {
       <Experience color={color} />
       <Projects color={color} />
       <Contact color={color} />
-      <Footer />
+      <Footer color={color} />
     </>
   );
 }

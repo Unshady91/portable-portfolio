@@ -95,7 +95,7 @@ export default function Projects({ color }) {
             ))}
           </Stack>
           <Text color={"gray.600"} fontSize={"xl"} px={4}>
-            Other Projects
+            Прочие проекты
           </Text>
           <Center px={4}>
             <ButtonGroup variant="outline">

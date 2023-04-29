@@ -12,7 +12,7 @@ export default function About({ color }) {
   const profile = ProfileArray();
     return (
       <>
-        <Container maxW={"3xl"} id="about">
+        <Container maxW={"3xl"} id="about" mt="100px">
           <Stack
             as={Box}
             textAlign={"center"}
@@ -24,7 +24,7 @@ export default function About({ color }) {
                 <Text color={`${color}.400`} fontWeight={800}>
                   01
                 </Text>
-                <Text fontWeight={800}>About</Text>
+                <Text fontWeight={800}>Инфо</Text>
               </HStack>
               <Divider orientation="horizontal" />
             </Stack>
